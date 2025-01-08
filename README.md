@@ -29,7 +29,7 @@ O principal objetivo deste projeto é realizar análises de vendas utilizando co
 
 ## Como Usar
 
-### 1. Importando o Banco de Dados
+### Importando o Banco de Dados
 
 Para começar a usar o banco de dados em seu ambiente local, basta importar o arquivo SQL. Se você está utilizando o **MySQL** ou **MariaDB**, execute os seguintes passos:
 
@@ -41,4 +41,16 @@ Para começar a usar o banco de dados em seu ambiente local, basta importar o ar
    ```bash
    SOURCE /caminho/para/mysqlsampledatabase.sql
    ```
-5. 
+4. Após importar o banco de dados, você pode começar a realizar análises com as seguintes consultas SQL:
+    - Contar o número total de pedidos realizados:
+   ```bash
+    SELECT COUNT(*) FROM orders;
+   ```
+    - Encontrar os clientes com mais pedidos:
+   ```bash
+   SELECT customerNumber, COUNT(orderNumber) AS totalOrders FROM orders GROUP BY customerNumber ORDER BY totalOrders DESC;
+   ```
+   - Identificar os produtos mais vendidos:
+   ```bash
+   SELECT productCode, SUM(quantityOrdered) AS totalSold FROM orderdetails GROUP BY productCode ORDER BY totalSold DESC;
+   ```
