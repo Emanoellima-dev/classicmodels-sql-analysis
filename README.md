@@ -37,4 +37,8 @@ Para começar a usar o banco de dados em seu ambiente local, basta importar o ar
 2. Abra o terminal e conecte-se ao seu banco de dados MySQL/MariaDB:
    ```bash
    mysql -u root -p
-3.
+3. importe o arquivo sql
+   ```bash
+   SOURCE /caminho/para/mysqlsampledatabase.sql
+   ```
+5. 
