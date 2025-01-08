@@ -54,3 +54,11 @@ Para começar a usar o banco de dados em seu ambiente local, basta importar o ar
    ```bash
    SELECT productCode, SUM(quantityOrdered) AS totalSold FROM orderdetails GROUP BY productCode ORDER BY totalSold DESC;
    ```
+## Créditos ao autor
+ o arquivo sql deste repositório foi baixado da internet.
+ 
+  Name: MySQL Sample Database classicmodels
+  Link: http://www.mysqltutorial.org/mysql-sample-database.aspx
+
+## Observações
+no momento não estou aceitando contribuições ao projeto. este projeto foi feito apenas com o intuito de aprimorar meus conhecimentos em SQL.
