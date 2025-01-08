@@ -33,7 +33,7 @@ O principal objetivo deste projeto é realizar análises de vendas utilizando co
 
 Para começar a usar o banco de dados em seu ambiente local, basta importar o arquivo SQL. Se você está utilizando o **MySQL** ou **MariaDB**, execute os seguintes passos:
 
-1. Baixe o arquivo `classicmodels.sql`.
+1. Baixe o arquivo [mysqlsampledatabase.sql](https://github.com/Emanoellima-dev/classicmodels-sql-analysis/blob/main/mysqlsampledatabase.sql).
 2. Abra o terminal e conecte-se ao seu banco de dados MySQL/MariaDB:
    ```bash
    mysql -u root -p
